@@ -17,7 +17,7 @@ public class DiceTest {
 	@Test
 	public void DiceReturnsNumber() {
 		Dice dice = new Dice();
-		int num = dice.randomNumberGenerator();
+		int num = dice.roll();
 		int num = dice.roll();
 		Assert.assertTrue((num <= 6 && num >=1));
 	}
