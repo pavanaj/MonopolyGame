@@ -21,5 +21,12 @@ public class DiceTest {
 		System.out.println(num);
 		Assert.assertTrue((num <= 6 && num >=1));
 	}
+	
+	@Test
+	public void DiceGetSteps() {
+		Dice dice = new Dice();
+		int num = dice.getSteps();
+		Assert.assertTrue((num <= 12 && num >=2));
+	}
 
 }
