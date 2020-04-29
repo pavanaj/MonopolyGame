@@ -26,6 +26,10 @@ public class Board {
 	public List<ISquare> getBoardPositions() {
 		return boardPositions;
 	}
+	
+	public ISquare getBoardPosition(int position) {
+		return boardPositions.get(position);
+	}
 
 	public void setBoardPositions(List<ISquare> boardPositions) {
 		this.boardPositions = boardPositions;
