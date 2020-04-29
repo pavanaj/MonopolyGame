@@ -1,4 +1,4 @@
-package production;
+package com.amdocs.monopoly.production;
 
 public abstract class ISquare {
 

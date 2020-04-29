@@ -1,4 +1,4 @@
-package production;
+package com.amdocs.monopoly.production;
 
 import java.util.ArrayList;
 import java.util.List;
