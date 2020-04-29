@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 //Should extend Square
 public class Property extends ISquare{
+	
 	private int propertyCost;
 	private int rentCost;
 	private String color;
