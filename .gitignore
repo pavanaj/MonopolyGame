@@ -2,3 +2,4 @@
 pom.xml
 .classpath
 .metadata
+target/classes/META-INF/MANIFEST.MF
