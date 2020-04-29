@@ -18,7 +18,6 @@ public class DiceTest {
 	public void DiceReturnsNumber() {
 		Dice dice = new Dice();
 		int num = dice.roll();
-		int num = dice.roll();
 		Assert.assertTrue((num <= 6 && num >=1));
 	}
 	
