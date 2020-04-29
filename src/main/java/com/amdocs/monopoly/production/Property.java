@@ -2,9 +2,10 @@ package com.amdocs.monopoly.production;
 
 
 //Should extend Square
-public class Property {
+public class Property extends ISquare{
 	int propertyCost;
 	int rentCost;
+	String description;
 	String owner;
 	
 	
@@ -12,10 +13,7 @@ public class Property {
 		this.propertyCost = propertyCost;
 		this.rentCost = rentCost;
 		this.owner = "";
-		/*
-		super.setDescription(description);
-		super.setType("property");
-		*/
+		this.description = description;
 	}
 	
 	// get the cost of the property
@@ -36,6 +34,16 @@ public class Property {
 	// get the owner of the property
 	public String getOwner() {
 		return owner;
+	}
+
+	@Override
+	public String getType() {
+		return "property";
+	}
+
+	@Override
+	public String getSquareName() {
+		return this.description;
 	}
 
 
