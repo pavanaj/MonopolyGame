@@ -24,7 +24,7 @@ public class Game {
 		for(int i = 0; i < num; ++i) {
 			System.out.println("What is the name of player "+i+"?");
 			String name = input.nextLine();
-			playerList.add(new Player(name, 1500, 0, i, i));
+			playerList.add(new Player(name, i, i));
 		}
 	}
 	public List<Player> getPlayerList() {

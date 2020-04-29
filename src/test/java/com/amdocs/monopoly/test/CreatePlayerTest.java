@@ -8,7 +8,6 @@ import com.amdocs.monopoly.production.Player;
 public class CreatePlayerTest {
 
 	@Test
-	@Test
 	public void NewPlayerTest() {
 		Player player = new Player("didier",3, 5 );
 		Assert.assertNotNull(player);

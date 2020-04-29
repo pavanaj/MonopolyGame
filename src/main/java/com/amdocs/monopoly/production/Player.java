@@ -40,7 +40,7 @@ public class Player {
 	public String getPlayerName() {
 		return name;
 	}
-	public double getPlayerBalance() {
+	public int getPlayerBalance() {
 		return balance;
 	}
 	
