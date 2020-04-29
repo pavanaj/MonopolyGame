@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
+import com.amdocs.monopoly.production.Board;
 import com.amdocs.monopoly.production.Game;
 import com.amdocs.monopoly.production.ISquare;
 import com.amdocs.monopoly.production.Player;
@@ -46,27 +47,20 @@ public class GameTest {
 		Assert.assertNotEquals(startingPosition, newPosition);
 	}
 	
-	/*@Test
-	public void testSquareDetails() {
+	@Test
+	public void testSquareType() {
 		Player testPlayer = game.getPlayerList().get(0);
 		game.movePlayer(testPlayer);
-		ISquare square = game.getBoard().getBoardPositions().get(testPlayer.getPlayerPosition());
+		int playerPosition = testPlayer.getPlayerPosition();
+		//System.out.println(playerPosition);
+		Board board = game.getBoard();
+		ISquare square = board.getBoardPosition(playerPosition);
 		Assert.assertEquals(square.getType(), "property");
-	}*/
-	
-
-	/*
-	@Test
-	public void testAllPlayersStartAtGo() {
-		for(int i = 0; i < game.getNumPlayers(); ++i) {
-			Assert.assertEquals(game.getPlayer(i).getPosition(), 0);
-		}
-	}*/
+	}
 	
 	@Test
 	public void testRunOneTurn() {
-		//game.runTurn();
-		//Assert all players are moved a certain number of squares
+		
 	}
 
 }

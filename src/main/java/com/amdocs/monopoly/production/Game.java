@@ -13,6 +13,7 @@ public class Game {
 	
 	public Game() {
 		board = new Board();
+		board.setupBoardPositions();
 	}
 	public Board getBoard() {
 		return board;
@@ -55,9 +56,23 @@ public class Game {
 	}
 	
 	public void doRound() {
-//		for player in players
-//			rollDice();
-//			movePlayer(player);
-//			interactWithSquare(player, square); //idk
+		for(Player player: playerList) {
+			movePlayer(player);
+			ISquare square = board.getBoardPosition(player.getPlayerPosition());
+			if(square.getType().equals("property")) {
+				Property property = (Property) square;
+				if(property.getOwner().equals("")) {
+					System.out.println("Would you like to buy "+property.getSquareName()+" for $"+property.getPropertyCost()+"?");
+					Scanner scanner = new Scanner(System.in);
+					boolean response = scanner.nextBoolean();
+					if(response) {
+						//subtract cost
+						//set owner
+					}
+				} else {
+					//pay rent
+				}
+			}
+		}
 	}
 }
