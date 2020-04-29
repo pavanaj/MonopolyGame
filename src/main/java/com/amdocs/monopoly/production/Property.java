@@ -4,11 +4,13 @@ import java.util.ArrayList;
 
 //Should extend Square
 public class Property extends ISquare{
-	int propertyCost;
-	int rentCost;
-	String color;
-	String description;
-	String owner;
+	private int propertyCost;
+	private int rentCost;
+	private String color;
+	
+
+	private String description;
+	private String owner;
 	
 	
 	public Property(int propertyCost, int rentCost,String color, String description) {
@@ -40,6 +42,11 @@ public class Property extends ISquare{
 		return owner;
 	}
 	
+	//get the property color
+	public String getColor() {
+		return color;
+	}
+	
 	public ArrayList<String> viewDetails() {
 		ArrayList<String> details = new ArrayList<String>();
 		details.add(this.getType());
@@ -58,6 +65,7 @@ public class Property extends ISquare{
 		return details;
 		
 	}
+
 
 	@Override
 	public String getType() {
