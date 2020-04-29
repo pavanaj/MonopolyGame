@@ -1,6 +1,5 @@
 package com.amdocs.monopoly.test;
 
-import java.io.ByteArrayOutputStream;
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -10,8 +9,6 @@ import org.junit.Test;
 import com.amdocs.monopoly.production.Property;
 
 public class PropertyTest {
-
-	private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
 	
 	@Test
 	public void propertyExist1() {
