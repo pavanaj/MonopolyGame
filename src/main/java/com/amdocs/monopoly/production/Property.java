@@ -46,8 +46,4 @@ public class Property extends ISquare{
 		return this.description;
 	}
 
-
-
-	
-	
 }
