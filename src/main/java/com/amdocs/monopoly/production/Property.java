@@ -5,15 +5,18 @@ package com.amdocs.monopoly.production;
 public class Property extends ISquare{
 	int propertyCost;
 	int rentCost;
+	String color;
 	String description;
 	String owner;
 	
 	
-	public Property(int propertyCost, int rentCost, String description) {
+	public Property(int propertyCost, int rentCost,String color, String description) {
 		this.propertyCost = propertyCost;
 		this.rentCost = rentCost;
+		this.color = color;
 		this.owner = "";
 		this.description = description;
+		//super.setPosition(position); 
 	}
 	
 	// get the cost of the property
