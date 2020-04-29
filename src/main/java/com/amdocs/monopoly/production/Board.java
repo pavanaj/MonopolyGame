@@ -17,7 +17,7 @@ public class Board {
 		boardPositions = new ArrayList<ISquare>();
 		
 		boardPositions.add(new GoSquare());
-		for(int i = 0; i < 39; ++i) {
+		for(int i = 1; i < 40; ++i) {
 			boardPositions.add(new Property(i*100, i*150, "Blue", "They're all blue"));
 		}
 	}

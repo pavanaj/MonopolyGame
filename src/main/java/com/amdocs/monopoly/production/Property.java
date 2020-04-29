@@ -8,11 +8,9 @@ public class Property extends ISquare{
 	private int propertyCost;
 	private int rentCost;
 	private String color;
-	
 
 	private String description;
 	private String owner;
-	
 	
 	public Property(int propertyCost, int rentCost,String color, String description) {
 		this.propertyCost = propertyCost;

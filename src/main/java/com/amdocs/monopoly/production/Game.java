@@ -66,8 +66,7 @@ public class Game {
 					Scanner scanner = new Scanner(System.in);
 					boolean response = scanner.nextBoolean();
 					if(response) {
-						//subtract cost
-						//set owner
+						// call buy property
 					}
 				} else {
 					//pay rent

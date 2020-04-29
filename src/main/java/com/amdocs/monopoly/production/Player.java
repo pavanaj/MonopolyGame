@@ -11,7 +11,6 @@ public class Player {
 	
 	public Player(String name,int token, int rotationNumber) {
 		this.name = name;
-		
 		this.token = token;
 		this.rotationNumber = rotationNumber;
 		
