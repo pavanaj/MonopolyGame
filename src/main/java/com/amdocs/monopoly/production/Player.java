@@ -1,27 +1,27 @@
 package com.amdocs.monopoly.production;
 
-public class CreatePlayers {
+public class Player {
 	
+
 	private String name;
-	private double balance;
-	private int position;
+	private int balance = 1500;
+	private int position = 0;
 	private int token;
 	private int rotationNumber;
 	
-	public CreatePlayers(String name, double balance, int position, int token, int rotationNumber) {
+	public Player(String name,int token, int rotationNumber) {
 		this.name = name;
-		this.balance = balance;
-		this.position = position;
+		
 		this.token = token;
 		this.rotationNumber = rotationNumber;
 		
 	}
 	
-	/*public void setPlayerName(String name) { 
+	public void setPlayerName(String name) { 
 		this.name = name;
 	}
 	
-	public void setPlayerBalance(double balance) {
+	public void setPlayerBalance(int balance) {
 		this.balance = balance;
 	}
 	
@@ -35,8 +35,11 @@ public class CreatePlayers {
 	
 	public void setPlayerRotationNumber(int rotationNumber) {
 		this.rotationNumber = rotationNumber;
-	}*/
+	}
 	
+	public String getPlayerName() {
+		return name;
+	}
 	public double getPlayerBalance() {
 		return balance;
 	}
@@ -52,5 +55,8 @@ public class CreatePlayers {
 	public int getPlayerRotationNumber() {
 		return rotationNumber;
 	}
-
+	
+	public void withdrawBalance(int cost) {
+		balance -= cost;
+	}
 }

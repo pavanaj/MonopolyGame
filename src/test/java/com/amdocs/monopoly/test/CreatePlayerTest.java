@@ -3,15 +3,20 @@ package com.amdocs.monopoly.test;
 import org.junit.Assert;
 import org.junit.Test;
 
-import com.amdocs.monopoly.production.CreatePlayers;
+import com.amdocs.monopoly.production.Player;
 
 public class CreatePlayerTest {
 
 	@Test
-	public void test() {
-		CreatePlayers player = new CreatePlayers("didier", 200.5, 1, 3, 5 );
+	@Test
+	public void NewPlayerTest() {
+		Player player = new Player("didier",3, 5 );
 		Assert.assertNotNull(player);
 
 	}
+	public void BuyPropertyTest() {
+		//BuyProperty = new BuyProperty();
+	}
+
 
 }
