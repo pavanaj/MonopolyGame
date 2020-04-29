@@ -8,10 +8,15 @@ import com.amdocs.monopoly.production.Player;
 public class CreatePlayerTest {
 
 	@Test
-	public void test() {
-		Player player = new Player("didier", 200.5, 1, 3, 5 );
+	@Test
+	public void NewPlayerTest() {
+		Player player = new Player("didier",3, 5 );
 		Assert.assertNotNull(player);
 
 	}
+	public void BuyPropertyTest() {
+		//BuyProperty = new BuyProperty();
+	}
+
 
 }
