@@ -7,7 +7,8 @@ public class Property {
 	int rentCost;
 	String owner;
 	
-	public Property(int propertyCost, int rentCost, int position, String description) {
+	
+	public Property(int propertyCost, int rentCost, String description) {
 		this.propertyCost = propertyCost;
 		this.rentCost = rentCost;
 		this.owner = "";
