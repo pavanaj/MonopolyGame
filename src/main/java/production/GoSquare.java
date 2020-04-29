@@ -16,5 +16,5 @@ public class GoSquare extends ISquare {
 	public GoSquare() {
 		super();
 	}
-	
+
 }
