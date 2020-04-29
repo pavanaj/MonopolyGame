@@ -1,5 +1,6 @@
 package com.amdocs.monopoly.production;
 
+import java.util.ArrayList;
 
 //Should extend Square
 public class Property extends ISquare{
@@ -37,6 +38,25 @@ public class Property extends ISquare{
 	// get the owner of the property
 	public String getOwner() {
 		return owner;
+	}
+	
+	public ArrayList<String> viewDetails() {
+		ArrayList<String> details = new ArrayList<String>();
+		details.add(this.getType());
+		details.add(this.description);
+		details.add(this.color);
+		details.add(this.owner);
+		details.add(Integer.toString(this.propertyCost));
+		details.add(Integer.toString(this.rentCost));
+		
+		System.out.println("Type: " + details.get(0));
+		System.out.println("Description: " + details.get(1));
+		System.out.println("Color: " + details.get(2));
+		System.out.println("Owner: " + details.get(3));
+		System.out.println("Cost: " + details.get(4));
+		System.out.println("Rent: " + details.get(5));
+		return details;
+		
 	}
 
 	@Override
