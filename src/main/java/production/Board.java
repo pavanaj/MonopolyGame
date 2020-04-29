@@ -15,7 +15,7 @@ public class Board {
 	}
 	
 	public void setupNumberOfPlayers() {
-		
+		playerList = new ArrayList<Player>();
 	}
 	
 	public void setupBoardPositions() {
